@@ -1,0 +1,10 @@
+target/
+project/target/
+project/project/
+native/build/
+external/
+.bsp/
+.metals/
+.idea/
+.vscode/
+.DS_Store

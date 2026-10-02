@@ -1,0 +1,23 @@
+scala-ollama-direct-ffm 0.3.0-direct-gguf
+
+This regenerated release explicitly supports:
+
+  --model NAME        Resolve a model from the local Ollama store
+  --gguf PATH         Load an arbitrary local GGUF file directly
+  --raw               Raw completion without chat templating
+  --version           Print this release identifier
+
+Conservative default runtime settings after Metal-memory testing:
+
+  contextSize = 8192
+  batchSize   = 128
+  gpuLayers   = 20
+  maxTokens   = 1024
+
+Verify the extracted project with:
+
+  ./scripts/verify-project.sh
+  sbt 'run --version'
+  sbt 'run --help'
+
+The help output must contain --gguf PATH before attempting a direct-GGUF run.
